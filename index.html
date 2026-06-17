@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SQA Engineer</title>
+  <meta name="description" content="Portfolio of Wahidun Akter, Software QA Engineer specializing in test automation, manual testing, and quality strategy.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="css/experience.css">
+  <link rel="stylesheet" href="css/skills.css">
+  <link rel="stylesheet" href="css/certifications.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <div class="custom-cursor"></div>
+  <div class="custom-cursor-ring"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo"><span class="logo-bracket">[</span>oppy<span>_qa</span><span class="logo-bracket">]</span></a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certs</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="assets/resume.pdf" class="nav-cta" target="_blank" rel="noopener">Resume ↓</a>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu">
+    <a href="#about" data-section>About</a>
+    <a href="#projects" data-section>Projects</a>
+    <a href="#experience" data-section>Experience</a>
+    <a href="#skills" data-section>Skills</a>
+    <a href="#certifications" data-section>Certs</a>
+    <a href="#contact" data-section>Contact</a>
+    <a href="assets/resume.pdf" class="nav-cta" target="_blank" rel="noopener">Resume ↓</a>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-container">
+      <div class="hero-left">
+        <div class="hero-eyebrow">test_suite.run() — 0 failures</div>
+        <h1 class="hero-name">Wahidun Akter</h1>
+        <p class="hero-role">Software <span class="role-tag">QA</span> Engineer</p>
+        <p class="hero-desc">
+          I break software before your users do. Five years of designing test strategies,
+          building automation frameworks, and chasing down the bugs that hide between the
+          happy paths.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">View Projects</a>
+          <a href="#contact" class="btn-secondary">Get In Touch</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number"><span class="accent" data-target="1" data-suffix="+">0</span></div>
+            <div class="stat-label">Years in QA</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number"><span class="accent" data-target="300" data-suffix="+">0</span></div>
+            <div class="stat-label">Bugs Logged</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number"><span class="accent" data-target="90" data-suffix="%">0</span></div>
+            <div class="stat-label">Avg. Coverage</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-terminal">
+          <div class="terminal-bar">
+            <div class="terminal-dots"><span></span><span></span><span></span></div>
+            <div class="terminal-title">regression_suite.spec.js</div>
+          </div>
+          <div class="terminal-body">
+            <div class="t-line"><span class="prompt">$</span><span class="cmd">npm run test:regression</span></div>
+            <div class="t-line"><span class="info">running 42 specs across 6 suites...</span></div>
+            <div class="t-line"><span class="pass">✓</span><span class="cmd">login flow — valid credentials</span></div>
+            <div class="t-line"><span class="pass">✓</span><span class="cmd">checkout — applies promo code</span></div>
+            <div class="t-line"><span class="pass">✓</span><span class="cmd">API — rate limit returns 429</span></div>
+            <div class="t-line"><span class="amber">⚠</span><span class="cmd">cart sync — flaky, retried</span></div>
+            <div class="t-line"><span class="pass">✓</span><span class="cmd">accessibility — WCAG AA pass</span></div>
+            <div class="t-line"><span class="pass">✓</span><span class="cmd">cross-browser — Safari 17 ✔</span></div>
+            <div class="progress-bar-wrap"><div class="progress-bar-fill"></div></div>
+            <div class="t-line"><span class="num">42</span><span class="info">passed,</span> <span class="num">0</span><span class="info">failed,</span> <span class="num">1</span><span class="info">flaky</span></div>
+            <div class="terminal-summary">✓ All critical paths verified — ready to ship</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <div class="section-label">About</div>
+          <h2 class="section-title">Quality isn't a phase, it's a mindset.</h2>
+          <p class="reveal">
+            I'm a Software QA Engineer based in Dhaka, working with teams across product, design,
+            and engineering to ship software that actually holds up in production. My background
+            spans <strong>manual exploratory testing</strong>, <strong>automated regression suites</strong>,
+            and <strong>API/contract testing</strong> — I move between all three depending on what
+            a release actually needs, not what's trendy.
+          </p>
+          <p class="reveal">
+            I started in QA after watching one too many "quick fixes" cause cascading production
+            incidents. Since then I've built test strategies for fintech, e-commerce, and SaaS
+            products, and I still get a small thrill every time a regression test catches
+            something before a user does.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item reveal"><span class="hi-icon">🎯</span> Risk-based test planning that prioritizes what actually breaks</div>
+            <div class="highlight-item reveal"><span class="hi-icon">⚙️</span> CI/CD-integrated automation — tests run on every PR, not just before release</div>
+            <div class="highlight-item reveal"><span class="hi-icon">🐛</span> Clear, reproducible bug reports developers don't have to chase you about</div>
+          </div>
+        </div>
+
+        <div class="about-right">
+          <div class="info-card reveal">
+            <div class="info-card-label">Currently</div>
+            <div class="info-card-value">Quality Assurance Engineer Intern @ a1qa</div>
+          </div>
+          <div class="info-card reveal">
+            <div class="info-card-label">Based in</div>
+            <div class="info-card-value">Dhaka, Bangladesh</div>
+          </div>
+          <div class="info-card reveal">
+            <div class="info-card-label">Reach me at</div>
+            <div class="info-card-value"><a href="mailto:oppy.wahidun@gmail.com" data-email-link data-email-text>oppy.wahidun@gmail.com</a></div>
+          </div>
+          <div class="info-card reveal">
+            <div class="info-card-label">Toolbox</div>
+            <div class="tools-grid">
+              <span class="tool-chip">Selenium</span>
+              <span class="tool-chip">Playwright</span>
+              <span class="tool-chip">Cypress</span>
+              <span class="tool-chip">Postman</span>
+              <span class="tool-chip">JMeter</span>
+              <span class="tool-chip">Jira / Xray</span>
+              <span class="tool-chip">Jenkins</span>
+              <span class="tool-chip">TestRail</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects">
+    <div class="container">
+      <div class="projects-header">
+        <div>
+          <div class="section-label">Projects</div>
+          <h2 class="section-title">Test suites & QA work</h2>
+        </div>
+        <p class="section-subtitle">A sample of automation frameworks, test plans, and quality
+          initiatives I've led or contributed to.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="project-card featured reveal">
+          <div class="project-body">
+            <div class="project-icon">🧪</div>
+            <h3 class="project-title">E-commerce Regression Framework</h3>
+            <p class="project-desc">
+              Built a Playwright + TypeScript automation suite covering checkout, cart, and
+              payment flows for a mid-size e-commerce platform. Reduced manual regression time
+              from 3 days to 90 minutes and caught two payment-blocking bugs before launch.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag teal">Playwright</span>
+              <span class="project-tag teal">TypeScript</span>
+              <span class="project-tag">GitHub Actions</span>
+              <span class="project-tag">Page Object Model</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">↗ Case study</a>
+              <a href="#" class="project-link">⌥ Repo</a>
+            </div>
+          </div>
+          <div class="project-meta-right">
+            <div class="test-coverage">
+              Coverage: <strong>90%</strong>
+              <div class="coverage-bar"><div class="coverage-fill" data-pct="96" style="width:0"></div></div>
+            </div>
+            <div class="test-coverage">
+              Specs: <strong>73</strong>
+            </div>
+            <div class="test-coverage">
+              Avg. run time: <strong>5m 40s</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-icon">🔌</div>
+          <h3 class="project-title">API Contract Test Suite</h3>
+          <p class="project-desc">
+            Postman + Newman collection validating 60+ REST endpoints against OpenAPI specs,
+            wired into CI to block merges on schema drift.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag teal">Postman</span>
+            <span class="project-tag">Newman</span>
+            <span class="project-tag">OpenAPI</span>
+          </div>
+          <div class="project-links"><a href="#" class="project-link">↗ Details</a></div>
+        </div>
+
+      
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-label">Experience</div>
+      <h2 class="section-title">Where I've worked</h2>
+
+      <div class="experience-layout" style="margin-top: 48px;">
+        <div class="exp-tabs">
+          <button class="exp-tab active" data-tab="finlytics">a1qa</button>
+          <button class="exp-tab" data-tab="shopwave">Ostad</button>
+          <button class="exp-tab" data-tab="brightpay">Farhanas' Brainstation</button>
+        </div>
+
+        <div class="exp-content">
+          <div class="exp-panel active" data-panel="finlytics">
+            <div class="exp-header">
+              <div class="exp-title">Software Quality Assurance Engineer</div>
+              <div class="exp-company">QA Functional Engineer Intern</div>
+              <div class="exp-meta">
+                <span> Dec 25 — Apr 26</span>
+                <span> 📍 Dhaka, Bangladesh</span>
+              </div>
+            </div>
+            <ul class="exp-duties">
+              <li>Performed manual testing on web and mobile applications, including functional, smoke and regression testing to ensure product quality.</li>
+              <li>Designed and executed test cases based on project requirements, acceptance criteria.</li>
+              <li>Identified, documented and tracked defects using Jira, following the defect lifecycle, supporting defect validation.</li>
+              <li>Conducted cross-platform testing across different browsers and environments.</li>
+              <li>Used Chrome DevTools, Charles Proxy, Fiddler to analyze network requests and debug application behavior.</li>
+              <li> Prepared test documentation, quality reports, acceptance sheets to support the QA process.</li>
+            </ul>
+            <div class="exp-tech">
+              <span class="tool-chip">Jira</span>
+              <span class="tool-chip">Application Testing</span>
+              <span class="tool-chip">Web Testing</span>
+              <span class="tool-chip">Quality Report</span>
+              <span class="tool-chip">Test Cases</span>
+              <span class="tool-chip">Test Survey</span>
+              <span class="tool-chip">Acceptance Sheet</span>
+              <span class="tool-chip">Defect Life-Cycle</span>
+              <span class="tool-chip">Defect Validation</span>
+              <span class="tool-chip">Cross_Platform Testing</span>
+              <span class="tool-chip">Bug Tracking</span>
+              <span class="tool-chip">Test Documentation</span>
+            </div>
+          </div>
+
+          <div class="exp-panel" data-panel="shopwave">
+            <div class="exp-header">
+              <div class="exp-title">QA Engineer</div>
+              <div class="exp-company">Trainee (SQA)</div>
+              <div class="exp-meta">
+                <span>Sep 25 - June 26</span>
+                <span>📍 Dhaka, Bangladesh</span>
+              </div>
+            </div>
+            <ul class="exp-duties">
+              <li>Experienced in the STLC process, including requirement analysis, Test Plan/Case design, defect management using Jira and Trello within Agile/Scrum frameworks.</li>
+              <li>Built UI automation frameworks with Playwright (Page Object Model), Selenium and automating REST APIs using Postman (Scripts/Assertions).</li>
+              <li>Technical skills include JavaScript, Node.js, version control via Git/GitHub; performed database testing with SQL (MySQL) and NoSQL (MongoDB).</li>
+              <li>Skilled in problem-solving through pseudocode, analyzing system architecture and validating data flow to ensure software quality and performance.</li>
+            </ul>
+            <div class="exp-tech">
+              <span class="tool-chip">Cypress</span>
+              <span class="tool-chip">Postman</span>
+              <span class="tool-chip">TestRail</span>
+            </div>
+          </div>
+
+          <div class="exp-panel" data-panel="brightpay">
+            <div class="exp-header">
+              <div class="exp-title">Sr. Project Associate</div>
+              <div class="exp-company">Senior Project Associate | Project Associate | Team Leader, SDG 13 (Climate Action)</div>
+              <div class="exp-meta">
+                <span>May 24 — Present</span>
+                <span>📍 Dhaka, Bangladesh</span>
+              </div>
+            </div>
+            <ul class="exp-duties">
+              <li>Lead youth teams under SDG 13: Climate Action, guiding Batches 11 and 12 on sustainability projects,
+including “Green Cities, Clean Futures: Cooling the Urban Heat & Reducing Plastic Pollution.”</li>
+              <li>Earned a Certificate of Completion for outstanding contribution as a Project Associate (HR & Admin) in the
+Climate Action project for Batch 11 (2024–2025).</li>
+              <li>Oversee project operations, manage team activities and ensure effective communication, coordination and
+problem-solving across teams.</li>
+              <li>Developed strong organizational, time management and leadership skills, supporting climate-focused and
+educational initiatives aligned with the SDG framework.</li>
+            </ul>
+            <div class="exp-tech">
+              <span class="tool-chip">Project Management</span>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-label">Skills</div>
+      <h2 class="section-title">What I bring to a QA process</h2>
+
+      <div class="skills-grid">
+        <div class="skill-category reveal">
+          <div class="skill-cat-icon">🤖</div>
+          <div class="skill-cat-title">Test Automation</div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-row"><span class="skill-name">Playwright / Cypress</span><span class="skill-pct">95%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-pct="95"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-row"><span class="skill-name">Selenium WebDriver</span><span class="skill-pct">88%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-pct="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-row"><span class="skill-name">API Testing (Postman)</span><span class="skill-pct">92%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-pct="92"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-icon">🔍</div>
+          <div class="skill-cat-title">Manual & Exploratory</div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-row"><span class="skill-name">Test Case Design</span><span class="skill-pct">96%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-pct="96"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-row"><span class="skill-name">Exploratory Testing</span><span class="skill-pct">90%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-pct="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-row"><span class="skill-name">Accessibility (WCAG)</span><span class="skill-pct">80%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-pct="80"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-icon">⚙️</div>
+          <div class="skill-cat-title">Tooling & Process</div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-row"><span class="skill-name">CI/CD (GitHub Actions/Jenkins)</span><span class="skill-pct">85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-pct="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-row"><span class="skill-name">JMeter / Performance</span><span class="skill-pct">75%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-pct="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-row"><span class="skill-name">SQL & Data Validation</span><span class="skill-pct">82%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-pct="82"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS ===== -->
+  <section id="certifications">
+    <div class="container">
+      <div class="section-label">Certifications</div>
+      <h2 class="section-title">Credentials & training</h2>
+
+      <div class="certs-grid">
+  <div class="cert-card reveal">
+    <span class="cert-issuer-badge istqb">Ostad</span>
+    <div class="cert-icon">
+  <img src="assets/logo/ostad.png" alt="Ostad Logo" class="cert-logo"> </div>
+    <div class="cert-name">Manual & Automated Testing</div>
+    <div class="cert-footer">
+      <span class="cert-date">Issued June 2026</span>
+      <a
+        href="https://ostad.app/share/certificate/c44444-wahidun-akter"
+        class="cert-verify"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Verify ↗
+      </a>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-label">Contact</div>
+      <h2 class="section-title">Let's talk about quality</h2>
+      <p class="section-subtitle">Open QA, SDET and QA lead roles — or just a chat about test strategy.</p>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="contact-intro">
+            Whether you need a test strategy audit, a hand building out automation from
+            scratch, or a full-time QA hire — I'd love to hear about what you're building.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:oppy.wahidun@gmail.com" class="contact-link-item" data-email-link>
+              <span class="contact-link-icon">✉</span>
+              <span class="contact-link-text"><strong>Email</strong><span data-email-text>oppy.wahidun@gmail.com</span></span>
+            </a>
+            <a href="https://www.linkedin.com/in/wahidun-oppy/" target="_blank" rel="noopener" class="contact-link-item">
+              <span class="contact-link-icon">in</span>
+              <span class="contact-link-text"><strong>LinkedIn</strong><span>/in/wahidun-oppy/</span></span>
+            </a>
+            <a href="https://github.com/wahidunoppy" target="_blank" rel="noopener" class="contact-link-item">
+              <span class="contact-link-icon">⌥</span>
+              <span class="contact-link-text"><strong>GitHub</strong><span>@wahidunoppy</span></span>
+            </a>
+            <a href="https://leetcode.com/u/evyZotpifD/" target="_blank" rel="noopener" class="contact-link-item">
+            <span class="contact-link-icon">
+            <i class="fa-solid fa-code"></i>
+            </span>
+            <span class="contact-link-text">
+            <strong>LeetCode</strong>
+            <span>@evyZotpifD</span>
+            </span>
+            </a>
+          </div>
+        </div>
+
+
+
+
+        
+        <form class="contact-form" id="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cf-name">Name</label>
+              <input type="text" id="cf-name" placeholder="Jane Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="cf-email">Email</label>
+              <input type="email" id="cf-email" placeholder="jane@company.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="cf-subject">Subject</label>
+            <input type="text" id="cf-subject" placeholder="QA role at Acme Inc.">
+          </div>
+          <div class="form-group">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" placeholder="Tell me a bit about the role or project..." required></textarea>
+          </div>
+          <button type="submit" class="form-submit">Send Message →</button>
+          <div id="form-status"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-left">Built with care, tested with <span>rigor</span>. © 2026 Wahidun Akter.</div>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="back-to-top">↑ Back to top</button>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/theme.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/counter.js"></script>
+  <script src="js/skills.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/email_links.js"></script>
+</body>
+</html>

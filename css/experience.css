@@ -1,0 +1,106 @@
+#experience {
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.experience-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.exp-tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  position: sticky;
+  top: 84px;
+}
+
+.exp-tab {
+  padding: 14px 18px;
+  border-left: 2px solid transparent;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: var(--transition);
+  text-align: left;
+  border-radius: 0 6px 6px 0;
+  background: transparent;
+}
+.exp-tab:hover {
+  color: var(--text-secondary);
+  background: var(--bg-card);
+}
+.exp-tab.active {
+  border-left-color: var(--accent-teal);
+  color: var(--accent-teal);
+  background: var(--bg-card);
+}
+
+.exp-panel {
+  display: none;
+}
+.exp-panel.active {
+  display: block;
+  animation: fadeInLine 0.4s ease;
+}
+
+.exp-header {
+  margin-bottom: 24px;
+}
+.exp-title {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+.exp-company {
+  color: var(--accent-teal);
+  font-size: 15px;
+  font-weight: 500;
+}
+.exp-meta {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-muted);
+  flex-wrap: wrap;
+}
+.exp-meta span { display: flex; align-items: center; gap: 5px; }
+
+.exp-duties {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.exp-duties li {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  color: var(--text-secondary);
+  font-size: 15px;
+  line-height: 1.65;
+}
+.exp-duties li::before {
+  content: '▸';
+  color: var(--accent-teal);
+  flex-shrink: 0;
+  font-size: 12px;
+}
+
+.exp-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border-subtle);
+}
